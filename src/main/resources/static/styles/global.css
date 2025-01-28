@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    font-family: Arial, serif;
+    color: var(--custom-color-font2);
+    background-color: var(--custom-color-background);
+
+    overflow-x: hidden;
+}
+
+:root {
+    --custom-color-background: #0D1B2A;
+    --custom-color-background2: #1B263B;
+    --custom-color-outline: #415A77;
+    --custom-color-font: #778DA9;
+    --custom-color-font2: #E0E1DD;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 1400px) {
+    body {
+        font-size: 3em;
+    }
+}

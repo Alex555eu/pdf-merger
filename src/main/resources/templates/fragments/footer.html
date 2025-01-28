@@ -1,0 +1,29 @@
+
+<div class="footer-container" th:fragment="footer">
+
+  <div class="wrapper">
+
+    <label>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z"/>
+      </svg>,
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+      </svg>
+      <span>
+         - Use the buttons to easily rearrange the order of your PDF files before merging.
+         To move a file, first select it by clicking on it,
+         then use the buttons to move it up or down and customize the sequence.
+      </span>
+    </label>
+
+    <label>merge
+      <span>
+         - Click the 'merge' button to combine your selected PDF files into one document.
+         Please note that merging large files may take some time.
+         Once the process is complete, the merged PDF will be downloaded automatically.</span></label>
+
+  </div>
+
+  <link rel="stylesheet" th:href="@{/styles/footer.css}">
+</div>

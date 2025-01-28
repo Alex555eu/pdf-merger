@@ -1,0 +1,29 @@
+.footer-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+}
+
+.wrapper span {
+    color: var(--custom-color-font);
+
+}
+
+@media (max-width: 1400px) {
+    .wrapper {
+        width: 90vw;
+    }
+}

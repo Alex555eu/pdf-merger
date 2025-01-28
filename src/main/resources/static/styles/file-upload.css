@@ -1,0 +1,136 @@
+.file-upload-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.drop-area {
+    width: 50%;
+    height: 20vh;
+    border: 2px dashed var(--custom-color-outline);
+    border-radius: 10px;
+    background-color: var(--custom-color-background2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--custom-color-font);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.drop-area.drag-over {
+    background-color: var(--custom-color-outline);
+}
+
+.btn-container {
+    width: 50%;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-container button {
+    background-color: var(--custom-color-background2);
+    border: 1px solid var(--custom-color-outline);
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
+
+    text-decoration: none;
+
+    font-size: 1em;
+    margin: 5px;
+    letter-spacing: 1px;
+    color: var(--custom-color-font);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-container #merge {
+    border: 1px solid transparent;
+    background-color: var(--custom-color-font2);
+    color: var(--custom-color-background);
+}
+
+.btn-container #merge:hover {
+    background-color: var(--custom-color-outline);
+    border: 1px solid var(--custom-color-font);
+}
+
+.btn-container button:hover {
+    background-color: var(--custom-color-outline);
+}
+
+#file-list {
+    width: 50%;
+    margin-top: 20px;
+    max-height: 50vh;
+    overflow: auto;
+    border-radius: 5px;
+    border: 1px solid var(--custom-color-outline);
+}
+
+.file-item {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--custom-color-background2);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.file-item:hover {
+    border: 1px solid var(--custom-color-outline);
+}
+
+.file-item.selected {
+    border: 1px solid var(--custom-color-font);
+}
+
+.file-item span {
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.file-item button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.file-item button:hover {
+    background-color: #ff0000;
+}
+
+.file-item button:focus {
+    outline: none;
+}
+
+@media (max-width: 1400px) {
+    .drop-area {
+        width: 90vw;
+    }
+    #file-list {
+        width: 90vw;
+    }
+    .file-item button {
+        font-size: 0.8em;
+    }
+    .file-item {
+        margin-top: 40px;
+    }
+}
