@@ -37,6 +37,7 @@ cd pdf-merger
 docker compose up
 
 ```
+Launch the application by navigating to: [http://localhost:8080](http://localhost:8080).
 
 ---
 **Happy Merging! 📝✨**
