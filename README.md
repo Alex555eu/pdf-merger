@@ -28,7 +28,7 @@ If you wish to run the project locally, follow these steps:
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/pdf-merger.git
+git clone https://github.com/Alex555eu/pdf-merger.git
 
 # Navigate to the Project Directory
 cd pdf-merger
