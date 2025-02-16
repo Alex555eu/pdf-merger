@@ -1,3 +1,5 @@
+import showSnackBar from "./snackbar.js";
+
 (function () {
     const mergeButton = document.getElementById('merge');
     const fileInput = document.getElementById('file-input');
@@ -17,6 +19,7 @@
     function postMergeRequest() {
         if (fileInput.files.length > 1) { // if more than 1 file has been provided
             mergeButton.disabled = true;
+            showSnackBar();
 
             const endpoint = "/merge";
             const url = window.location.origin + endpoint;
