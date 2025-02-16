@@ -37,8 +37,6 @@
                 body: formData
             })
                 .then(async response => {
-                    mergeButton.disabled = false;
-
                     if (!response.ok) {
                         throw new Error(`Response status: ${response.status}`);
                     }
@@ -55,6 +53,9 @@
                 })
                 .catch(error => {
                     console.error("Error during file upload:", error.message);
+                })
+                .finally(() => {
+                    mergeButton.disabled = false;
                 });
         }
     }
