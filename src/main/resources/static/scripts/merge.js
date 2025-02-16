@@ -15,7 +15,7 @@
      *
      */
     function postMergeRequest() {
-        if (fileInput.files.length !== 1) { // if more than 1 file has been provided
+        if (fileInput.files.length > 1) { // if more than 1 file has been provided
             mergeButton.disabled = true;
 
             const endpoint = "/merge";
