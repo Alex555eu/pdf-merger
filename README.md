@@ -1,10 +1,5 @@
 # PDF Merger - Online PDF Merging Tool
 
-## 🚀Live Demo
-[![APP STATUS](https://img.shields.io/badge/app%20status-up-brightgreen?style=for-the-badge)](https://merger-app.almapas.com)
-
-**Try the application online:** [merger-app](https://merger-app.almapas.com)
-
 ## 📖 Overview
 PDF Merger is a web-based application that allows users to seamlessly merge multiple PDF documents while managing their order. Designed for simplicity and efficiency, this tool provides a user-friendly interface to arrange, combine, and download PDFs in just a few clicks.
 
